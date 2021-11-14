@@ -35,3 +35,5 @@ C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\Mi
 C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\MySqlConnector.dll
 C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\EntityFramework.dll
+C:\Users\Marcio Ygor\Documents\Aulas_Web\Asp-Net\Api_Produto\bin\Debug\net5.0\System.Data.Entity.Repository.dll

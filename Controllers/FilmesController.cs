@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using System.ComponentModel.DataAnnotations;
 using Api_Produto.Models;
 
+
 namespace Api_Produto.Controllers
 {
     [ApiController]
@@ -43,6 +44,7 @@ namespace Api_Produto.Controllers
                 .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.id == id);
                 return filme;
+
             }
             catch
             {
@@ -70,6 +72,25 @@ namespace Api_Produto.Controllers
                 return BadRequest(ModelState);
             }
         }
+
+        [HttpPost]
+        [Route("{id:int}")]  //apagando um filme
+        public async Task<ActionResult<Filme>> RemoveById([FromServices] DataContext context, int id)
+        {
+            try
+            {
+              context.Filmes.Remove(context.Filmes.Find(id));
+              context.SaveChanges();
+              return Ok("Filme apagado.");
+
+            }
+            catch
+            {
+                return BadRequest("filme não encontrado");
+            }
+
+        }
+
 
 
     }
